@@ -7,21 +7,21 @@
         xmlns:controls="clr-namespace:MicaWPF.Controls;assembly=MicaWPF"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d" ui:ThemeManager.RequestedTheme="Default"
-        Title="MakuTweaker" 
+        Title="MakuTweaker"
         Height="675" MinHeight="675" MaxHeight="675"
         Width="1062" MinWidth="1062" MaxWidth="1062"
-        SystemBackdropType="Tabbed" WindowStartupLocation="CenterScreen" 
+        SystemBackdropType="Tabbed" WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
         UseLayoutRounding="True"
         Loaded="MicaWindow_Loaded"
         FocusVisualStyle="{x:Null}"
         Focusable="False"
-        Topmost="False" Icon="/makut.png" Foreground="White">
+        Topmost="False" Icon="/assets/images/makut.png" Foreground="White">
 
     <WindowChrome.WindowChrome>
-        <WindowChrome ResizeBorderThickness="0" 
-                      CaptionHeight="32" 
-                      CornerRadius="0" 
+        <WindowChrome ResizeBorderThickness="0"
+                      CaptionHeight="32"
+                      CornerRadius="0"
                       GlassFrameThickness="-1" />
     </WindowChrome.WindowChrome>
 

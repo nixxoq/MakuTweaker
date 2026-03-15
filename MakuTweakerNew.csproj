@@ -14,7 +14,7 @@
     <PackageProjectUrl>https://adderly.top</PackageProjectUrl>
     <ApplicationManifest>app.manifest</ApplicationManifest>
 	  <TargetPlatformVersion>10.0</TargetPlatformVersion>
-	  <ApplicationIcon>MakuTweaker.ico</ApplicationIcon>
+	  <ApplicationIcon>assets/icons/MakuTweaker.ico</ApplicationIcon>
 	  <PlatformTarget>x64</PlatformTarget>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <FileVersion>5.3.1</FileVersion>
@@ -26,24 +26,24 @@
   <ItemGroup>
     <None Remove="BuildLab.txt" />
     <None Remove="BuildNumber.txt" />
-    <None Remove="hand_heart_donate_icon.png" />
-    <None Remove="makut.png" />
-    <None Remove="MakuTweakerAbout.png" />
+    <None Remove="assets/images/hand_heart_donate_icon.png" />
+    <None Remove="assets/images/makut.png" />
+    <None Remove="assets/images/MakuTweakerAbout.png" />
     <None Remove="Office.cmd" />
-    <None Remove="Telegram_2019_Logo.svg.png" />
-    <None Remove="You-Tube-16.png" />
+    <None Remove="assets/images/Telegram_2019_Logo.svg.png" />
+    <None Remove="assets/images/You-Tube-16.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="MakuT.ico" />
-    <Content Include="MakuTweaker.ico" />
+    <EmbeddedResource Include="assets/icons/MakuT.ico" />
+    <Content Include="assets/icons/MakuTweaker.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="BuildLab.txt" />
     <EmbeddedResource Include="BuildNumber.txt" />
-    <Resource Include="hand_heart_donate_icon.png" />
-    <Resource Include="makut.png" />
+    <Resource Include="assets/images/hand_heart_donate_icon.png" />
+    <Resource Include="assets/images/makut.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -61,11 +61,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="MakuTweakerAbout.png">
+    <Resource Include="assets/images/MakuTweakerAbout.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Telegram_2019_Logo.svg.png" />
-    <Resource Include="You-Tube-16.png" />
+    <Resource Include="assets/images/Telegram_2019_Logo.svg.png" />
+    <Resource Include="assets/images/You-Tube-16.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -162,7 +162,7 @@
 		<PropertyGroup>
 			<BuildNumberFile>$(MSBuildProjectDirectory)\BuildNumber.txt</BuildNumberFile>
 			<BuildNumber>$([System.IO.File]::ReadAllText($(BuildNumberFile)).Trim())</BuildNumber>
-			
+
 			<CurrentDateTime>$([System.DateTime]::Now.ToString("yyyyMMdd-HHmm"))</CurrentDateTime>
 			<BuildVersion>$(BuildNumber).shpilka_dev-$(CurrentDateTime)</BuildVersion>
 		</PropertyGroup>
