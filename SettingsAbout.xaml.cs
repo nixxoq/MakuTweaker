@@ -128,42 +128,21 @@ namespace MakuTweakerNew
         {
             if (isLoaded)
             {
-                switch (lang.SelectedIndex)
+                Settings.Default.lang = lang.SelectedIndex switch
                 {
-                    case 0:
-                        Settings.Default.lang = "en";
-                        break;
-                    case 1:
-                        Settings.Default.lang = "ru";
-                        break;
-                    case 2:
-                        Settings.Default.lang = "ua";
-                        break;
-                    case 3:
-                        Settings.Default.lang = "cz";
-                        break;
-                    case 4:
-                        Settings.Default.lang = "de";
-                        break;
-                    case 5:
-                        Settings.Default.lang = "es";
-                        break;
-                    case 6:
-                        Settings.Default.lang = "pl";
-                        break;
-                    case 7:
-                        Settings.Default.lang = "et";
-                        break;
-                    case 8:
-                        Settings.Default.lang = "zh";
-                        break;
-                    case 9:
-                        Settings.Default.lang = "ja";
-                        break;
-                    case 10:
-                        Settings.Default.lang = "tl";
-                        break;
-                }
+                    0 => "en",
+                    1 => "ru",
+                    2 => "ua",
+                    3 => "cz",
+                    4 => "de",
+                    5 => "es",
+                    6 => "pl",
+                    7 => "et",
+                    8 => "zh",
+                    9 => "ja",
+                    10 => "tl",
+                    _ => "en"
+                };
                 Settings.Default.langSI = lang.SelectedIndex;
                 Settings.Default.Save();
                 mw.LoadLang(Settings.Default.lang);
